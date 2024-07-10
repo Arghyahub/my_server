@@ -2,6 +2,8 @@ import mongoose from "mongoose";
 
 const DB_URL = process.env.MONGODB || "mongodb://localhost:27017/test";
 
+console.log(DB_URL);
+
 export default async function connectDB() {
   try {
     await mongoose.connect(DB_URL);
